@@ -9,8 +9,11 @@ console.log("script two is also working ");
 
 
 //exercise 3
-var btntranslate = document.querySelector("#btn-translate");
-btntranslate.addEventListener("click",function clickeventhandler()
-{
-    console.log("transalted");
+var txtinput=document.querySelector("#text-input");
+var btn=document.querySelector("#junn");
+btn.addEventListener("click",function button(){
+    console.log("clicked")
+    console.log(txtinput.value)
 })
+
+
