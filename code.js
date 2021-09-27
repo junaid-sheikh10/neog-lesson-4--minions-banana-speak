@@ -29,9 +29,9 @@ btn.addEventListener("click",function button(){
 
     fetch(gettranslatedURL(inputText))
         .then(Response=>Response.json())
-        .then(json=>console.log(json))
+        .then(json=>console.log(json.contents.translated))
 
-    div.innerText=inputText;
+    div.innerText=inputText; 
 })
 
 
