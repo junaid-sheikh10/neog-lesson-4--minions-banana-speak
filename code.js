@@ -14,14 +14,27 @@ var btn=document.querySelector("#junn");
 var div=document.querySelector("#div-out");
 //div.innerText="..loading.."
 
+var serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?&text=junaid"
+
+function gettranslatedURL(t){
+    return serverURL+"?"+"text"+t
+}
+
+
 btn.addEventListener("click",function button(){
     
-    console.log("this is in text area"+txtinput.value)
+    //console.log("this is in text area"+txtinput.value)
     
-    var ans=txtinput.value;
-    div.innerText=ans
+    var inputText=txtinput.value; //taking input
+
+    fetch(gettranslatedURL(inputText))
+        .then(Response=>Response.json())
+        .then(json=>console.log(json))
+
+    div.innerText=inputText;
 })
 
 
 //var t=document.querySelector("#text-area")
 
+  
