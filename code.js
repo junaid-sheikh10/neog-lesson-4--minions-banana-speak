@@ -14,8 +14,8 @@ var btn=document.querySelector("#junn");
 var div=document.querySelector("#div-out");
 //div.innerText="..loading.."
 
-var serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?&text=junaid"
-
+//var serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?&text=junaid"
+var serverURL="https://api.funtranslations.com/translate/minion.json?text=Hello%2C%20I%20am%20hungry%21";
 function gettranslatedURL(t){
     return serverURL+"?"+"text"+t
 }
