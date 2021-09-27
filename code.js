@@ -21,6 +21,15 @@ function gettranslatedURL(t){
 }
 
 
+function errorHandler(){
+    console.log("error occured");
+    alert("error occured ! please try again after some time")
+}
+
+
+
+
+
 btn.addEventListener("click",function button(){
     
     //console.log("this is in text area"+txtinput.value)
@@ -29,9 +38,9 @@ btn.addEventListener("click",function button(){
 
     fetch(gettranslatedURL(inputText))
         .then(Response=>Response.json())
-        .then(json=>console.log(json.contents.translated))
-
-    div.innerText=inputText; 
+        .then(json=>{div.innerText=json.contents.translated})
+        .catch(errorHandler);
+    //div.innerText=inputText; 
 })
 
 
