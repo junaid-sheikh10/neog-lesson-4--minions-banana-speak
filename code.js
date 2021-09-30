@@ -9,9 +9,9 @@ console.log("script two is also working ");
 
 
 //exercise 3
-var txtinput=document.querySelector("#text-input");
+var txtinput=document.querySelector("#input");
 var btn=document.querySelector("#junn");
-var div=document.querySelector("#div-out");
+var div=document.querySelector("#outputdiv");
 //div.innerText="..loading.."
 
 //var serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?&text=junaid"
